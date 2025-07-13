@@ -1,0 +1,23 @@
+venv/
+
+cat <<EOL > .gitignore
+# Ambiente virtual
+venv/
+
+# Bytecode Python
+__pycache__/
+*.py[cod]
+
+# Arquivos temporários
+*.log
+*.tmp
+
+# Configurações de IDE
+.vscode/
+*.swp
+
+# Docker/Env
+.env
+.env.*
+docker-compose.override.yml
+EOL

@@ -21,13 +21,23 @@ mapa_idiomas = {
     "hebraico":"iw",
     "coreano":"ko",
     "noruegues":"no",
-    "ucraniano":"uk"
+    "ucraniano":"uk",
+    "holandes":"nl",
+    "esperanto":"eo",
+    "finlandes":"fi",
+    "galego":"gl",
+    "indonesio":"id",
+    "polones":"pl",
+    "hindi":"hi",
+    "latim":"la",
+    "luxemburgues":"lb",
+    "turcomeno":"tk"
 }
 
 escolha = True
 while escolha:
     nome = input("Digite o idioma que você quer ler:\n").lower()
-    nome_sem_acento = unidecode(nome)
+    nome_sem_acento = unidecode(nome).replace(" ","")
     if nome_sem_acento in mapa_idiomas:
         target = mapa_idiomas[nome_sem_acento] 
         escolha = False
@@ -42,3 +52,5 @@ tradutor = GoogleTranslator(Source ="auto", target= target)
 #Variável de suporte com o parâmetro para a tradução
 traducao = tradutor.translate(texto)
 print(f"Mensagem:\n{traducao}")
+
+

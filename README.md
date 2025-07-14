@@ -28,7 +28,7 @@ O **WConnect** é uma aplicação simples para tradução de textos entre difere
 Como Rodar
 
 1° Clone o repositório ou baixe o código.
-    git clone https://github.com/seuusuario/WConnect.git
+    git clone git clone https://github.com/DouglasTeixeiraLima1/WConnect.git
 
 2° Execute o script Python:
     python wconnect.py
@@ -111,5 +111,6 @@ Olá, como você está?
 
 Digite o idioma que você quer ler:
 ingles
+
 Mensagem:
 Hello, how are you?
